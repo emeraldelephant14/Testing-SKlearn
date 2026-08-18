@@ -6,8 +6,12 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
+
 # Load labels
 labels = pd.read_csv("labels.csv")
+
+# print(labels.columns)
+# print(labels.head())
 
 # Load text files
 texts = []
