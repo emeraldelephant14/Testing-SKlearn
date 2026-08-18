@@ -1,4 +1,9 @@
+#0 is test set 1 is train set
 filename,distressed
 fund1.txt,0
 fund2.txt,1
 fund3.txt,1
+fund4.txt,0
+fund5.txt,1
+fund6.txt,0
+fund7.txt,1
