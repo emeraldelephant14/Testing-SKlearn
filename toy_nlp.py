@@ -8,6 +8,8 @@ from sklearn.metrics import classification_report
 
 
 # Load labels
+# in labels.csv, 1 means distressed and 0 means not distressed#
+# the MODEL decides which samples go to train/test
 labels = pd.read_csv("labels.csv")
 
 # print(labels.columns)
@@ -21,9 +23,10 @@ for fname in labels["filename"]:
 
 labels["text"] = texts
 
-#vectorize text
+# vectorize text
 
 vectorizer = TfidfVectorizer(
+    # use 1-word and 2-word tokens, ignore english stop words
     ngram_range=(1,2),   # try (3,7) later
     stop_words="english"
 )
